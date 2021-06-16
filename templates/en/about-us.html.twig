@@ -1,0 +1,41 @@
+{% extends 'layout.html.twig' %}
+
+{% import "utils.html.twig" as content %}
+
+{% block container %}
+
+<!--Container-->
+<div class="container w-full md:max-w-5xl mx-auto pt-10 md:pt-20">
+
+    <div class="w-full h-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
+
+        <!--Title-->
+        <div class="font-sans mb-10">
+            <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
+                About Us
+            </h1>
+            <p class="text-sm md:text-base font-normal text-gray-600">Home > About Us</p>
+        </div>
+
+        <p class="mb-8">
+            REGIONAL ASSOCIATION OF FARMERS AND ENTERPRISES &quot;PODIȘ&quot; NGO
+            is a non-profit, apolitical, useful and civil interest association from Dumbrăvița commune, Singerei district,
+            Republic of Moldova.
+        </p>
+        <p class="mb-8">
+            It represents the visions and interests of its members, pursuing the
+            development of multi-partnerships with compatible (Romanian) and foreign communities
+            that promote local advocacy and lobbying policies in favor of implementing projects or other
+            public, community, regional and extra-regional utility programs.
+        </p>
+        <p class="mb-8">
+            It is dedicated to economic and non-economic activities, credit and investment, attracting investments and grants,
+            multiplying relevant partnerships and cooperation, social and public support, with non-profit
+            benefits and common interest for Romanian communities. from everywhere.
+        </p>
+    </div>
+
+    {{ content.callToAction(callToAction) }}
+</div>
+<!--/container-->
+{% endblock %}

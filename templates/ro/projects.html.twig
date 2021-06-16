@@ -1,0 +1,60 @@
+{% extends 'layout.html.twig' %}
+
+{% import "utils.html.twig" as content %}
+
+{% block container %}
+<!--Container-->
+<div class="container w-full md:max-w-5xl mx-auto pt-10 md:pt-20">
+
+    <div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
+
+        <!--Title-->
+        <div class="font-sans mb-8">
+            <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
+                Proiecte
+            </h1>
+            <p class="text-sm md:text-base font-normal text-gray-600">Acasa > Proiecte</p>
+        </div>
+
+        <p class="mb-8">
+            <strong>2012 /2013</strong> - Elaborarea și promovarea proiectului de construcție a stației termice
+            bazată pe biomasă pentru încălzirea gimnaziului și grădiniței din s. Dumbrăvița
+            finanțat de USAID (2,5 MLN lei MDL)
+        </p>
+        <p class="mb-8">
+            <strong>2014</strong> - Elaborarea și promovarea proiectului de construcție a drumului în variantă
+            albă pentru grupul - client beneficiar de producători (AO PODIȘ) co-finanțat de IFAD
+            cu 85 % (2,8 MLN lei MDL)
+        </p>
+
+        <p class="mb-8">
+            <strong>2015 /2016</strong> - Elaborarea și promovarea proiectului de reparații și termoizolare a
+            cladirii gimnaziului (60 mii lei MDL) și a grădiniței (940 mii lei MDL) în parteneriat cu
+            Primăria com. Dumbrăvița, proiecte co-finanțate de către Fondul pentru Eficiență
+            Energetică din Moldova
+        </p>
+        <p class="mb-8">
+            <strong>2016</strong> - Facilitarea și implementarea în parteneriat cu Primăria com. Dumbrăvița a
+            proiectului privind construcția blocului sanitar la gimnaziul din s. Dumbrăvița finanțat
+            de Eco-San (1,0 MLN lei MDL)
+        </p>
+        <p class="mb-8">
+            <strong>2017</strong> - Elaborarea și promovarea proiectului de reparații capitale interioare a clădirii
+            grădiniței din s. Dumbrăvița co-finanțat de Fondul de Investiții Sociale din Moldova
+            (800 mii lei MDL)
+        </p>
+        <p class="mb-8">
+            <strong>2020</strong> - Obținerea asistenței și finanțării caritabile prin Contract de filantropie alocate
+            de către BATICOM UNIP LDA Portugalia (10285 EUR) pentru elaborarea și
+            promovarea concepției Platformei agro – turistice și de producere cu impact benefic
+            regional și internațional dedicat comunității locale, regionale și vizitatorilor străini
+            interesați în cunoașterea tradițiilor, culturii ospitaliere și de agrement din Republica
+            Moldova.
+        </p>
+    </div>
+    <!--/Next & Prev Links-->
+
+    {{ content.callToAction(callToAction) }}
+</div>
+<!--/container-->
+{% endblock %}

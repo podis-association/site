@@ -1,0 +1,72 @@
+{% macro nav(pages = []) %}
+    <nav id="header" class="fixed w-full z-10 top-0">
+        <div id="progress" class="h-1 z-20 top-0"
+             style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
+
+        <div class="w-full md:max-w-5xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
+
+            <div class="pl-4">
+                <a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl"
+                   href="/en/index.html">
+                    “PODIȘ”
+                </a>
+            </div>
+
+            <div class="block lg:hidden pr-4">
+                <button id="nav-toggle"
+                        class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20"
+                 id="nav-content">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                    {% for page in pages %}
+                        <li class="mr-3">
+                            <a class="inline-block py-2 px-4 text-gray-900 font-bold no-underline" href="{{ page.path }}">{{ page.name }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+{% endmacro %}
+
+{% macro footer(data) %}
+    <footer class="bg-white border-t border-gray-400 shadow">
+        <div class="container max-w-5xl mx-auto flex flex-col pt-5 pb-5">
+            <div class="flex justify-center">
+                <p>
+                    <i class="fa fa-copyright" role="copyright"></i>© {{ data.copyright}} -
+                    <a href="{{  data.termsPage.path }}" class="generic-anchor" rel="nofollow">{{ data.termsPage.name }}</a> -
+                    <span class="footer-bottom-rights">{{  data.rights }}</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+{% endmacro %}
+
+{% macro callToAction(data) %}
+    <!--Divider-->
+    <hr class="border-b-2 border-gray-400 mb-12 mt-10 mx-4">
+
+    <!--Subscribe-->
+    <div class="container px-4 mb-20">
+        <div class="font-sans bg-gradient-to-b from-green-100 to-gray-100 rounded-lg shadow-xl p-4 text-center">
+            <h2 class="font-bold break-normal text-xl md:text-3xl">{{ data.title }}</h2>
+            <h3 class="font-bold break-normal text-gray-600 text-sm md:text-base">{{ data.description }}</h3>
+            <div class="w-full text-center pt-4">
+                <div class="max-w-xl mx-auto p-1 pr-0 flex flex-wrap items-center">
+                    <a href="{{ data.donatePage.path }}" class="flex-1 mt-4 block md:inline-block appearance-none bg-green-500 text-white text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:bg-green-400">{{ data.donatePage.name }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+
+

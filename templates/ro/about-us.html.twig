@@ -1,0 +1,44 @@
+{% extends 'layout.html.twig' %}
+
+{% import "utils.html.twig" as content %}
+
+{% block container %}
+<!--Container-->
+<div class="container w-full md:max-w-5xl mx-auto pt-10 md:pt-20">
+
+    <div class="w-full h-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
+
+        <!--Title-->
+        <div class="font-sans mb-10">
+            <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
+                Despre Noi
+            </h1>
+            <p class="text-sm md:text-base font-normal text-gray-600">Acasa > Despre Noi</p>
+        </div>
+
+        <p class="mb-8">
+            Asociația Obștească ASOCIAȚIA FERMIERILOR ȘI ÎNTREPRINZĂTORILOR REGIONALI
+            ”PODIȘ”, este o asociație non-profit, apolitică, de utilitate și interes civil din com.
+            Dumbrăvița, r-nul Sîngerei, Republica Moldova.
+        </p>
+        <p class="mb-8">
+            Reprezintă viziunile și interesele
+            membrilor săi, urmărind dezvoltarea multi-parteneriatelor cu comunitățile
+            compatibile (române) și străine care promovează politicile locale de advocacy și
+            lobby în favoarea implementării proiectelor sau altor programe de utilitate
+            publică, comunitară, regională și extra-regională.
+        </p>
+        <p class="mb-8">
+            Este dedicată activităților
+            economice și non-economice, de credit și investiționale, de atragere a investițiilor și
+            granturilor, de multiplicare a parteneriatelor și cooperărilor relevante, sociale și de
+            suport public, cu beneficii non-for-profit și de interes comun pentru comunitățile de
+            români de pretutindeni.
+        </p>
+    </div>
+
+    {{ content.callToAction(callToAction) }}
+</div>
+<!--/container-->
+
+{% endblock %}

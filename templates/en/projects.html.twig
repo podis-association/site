@@ -1,0 +1,66 @@
+{% extends 'layout.html.twig' %}
+
+{% import "utils.html.twig" as content %}
+
+{% block container %}
+
+<!--Container-->
+<div class="container w-full md:max-w-5xl mx-auto pt-10 md:pt-20">
+
+    <div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
+
+        <!--Title-->
+        <div class="font-sans mb-8">
+            <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
+                Projects
+            </h1>
+            <p class="text-sm md:text-base font-normal text-gray-600">Home > Projects</p>
+        </div>
+
+        <p class="mb-8">
+            <strong>2012/2013</strong> - Elaboration and promotion of the construction project of the biomass-
+            based heating station for the heating of the Gymnasium and Kindergarten in
+            Dumbrăvița village financed by USAID (2.5 million lei MDL)
+        </p>
+
+        <p class="mb-8">
+            <strong>2014</strong> - Elaboration and promotion of the road construction project in white version
+            for the group - customer beneficiary of producers (AO PODIȘ) co-financed by IFAD
+            with 85% (2.8 million lei MDL)
+        </p>
+
+        <p class="mb-8">
+            <strong>2015/2016</strong> - Elaboration and promotion of the repair and thermal insulation project
+            of the gymnasium building (60 thousand lei MDL) and of the kindergarten (940
+            thousand lei MDL) in partnership with Dumbrăvița City Hall, projects co-financed by
+            the Energy Efficiency Fund of Moldova
+        </p>
+
+        <p class="mb-8">
+            <strong>2016</strong> - Facilitation and implementation in partnership with Dumbrăvița City Hall of
+            the project on the construction of the sanitary block at the gymnasium in
+            Dumbrăvița village financed by Eco-San (1.0 million lei MDL)
+        </p>
+
+        <p class="mb-8">
+            <strong>2017</strong> - Elaboration and promotion of the project of interior capital repairs of the
+            kindergarten building in Dumbrăvița village co-financed by the Social Investment
+            Fund of Moldova (800 thousand lei MDL)
+        </p>
+
+        <p class="mb-8">
+            <strong>2020</strong> - Obtaining charitable assistance and funding through Philanthropy Contract
+            allocated by BATICOM UNIP LDA Portugal (EUR 10285) for the development and
+            promotion of the concept of the agro-tourism and production platform with
+            beneficial regional and international impact dedicated to local, regional and foreign
+            visitors interested in knowledge of the traditions, hospitality and leisure culture of
+            the Republic of Moldova.
+        </p>
+    </div>
+    <!--/Next & Prev Links-->
+
+    {{ content.callToAction(callToAction) }}
+</div>
+<!--/container-->
+
+{% endblock %}
