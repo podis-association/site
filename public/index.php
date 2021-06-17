@@ -130,7 +130,7 @@ class Kernel extends BaseKernel
     }
 }
 
-$kernel = new Kernel('dev', true);
+$kernel = new Kernel('prod', false);
 $request = Request::createFromGlobals();
 $response = $kernel->handle($request);
 $response->send();

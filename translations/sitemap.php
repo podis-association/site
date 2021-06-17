@@ -28,7 +28,7 @@ return [
             ],
             'rights' => 'All Rights Reserved'
         ],
-        'call-to-action' => [
+        'callToAction' => [
             'title' => 'Help our mission',
             'description' => 'You could help our mission by clicking on following button',
             'donatePage' => [
