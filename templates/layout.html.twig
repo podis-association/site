@@ -99,6 +99,33 @@ document.addEventListener('scroll', function () {
 document.getElementById('nav-toggle').onclick = function () {
     document.getElementById("nav-content").classList.toggle("hidden");
 }
+
+var languages_list = {
+    "en": "English",
+    "ro": "Romanian - română"
+};
+
+(function () {
+    var user_language_code = window.location.toString().split('/').reverse()[1];
+    console.log(user_language_code)
+
+    var option = '';
+    for (var language_code in languages_list) {
+        var selected = (language_code === user_language_code) ? ' selected' : '';
+        option += '<option value="' + language_code + '"' + selected + '>' + languages_list[language_code] + '</option>';
+    }
+
+    document.getElementById('languages-list').innerHTML = option;
+    document.getElementById('languages-list').onchange = (ev) => {
+        var lang = ev.currentTarget.options[ev.currentTarget.selectedIndex].value;
+
+        var url = window.location.toString().replace(/\/(en|ro)\//, '/'+lang+'/');
+        if (location.pathname === '/') {
+            url += lang+'/home'
+        }
+        window.location = url;
+    }
+})();
 </script>
 </body>
 
