@@ -39,15 +39,15 @@
 {% macro footer(data) %}
     <footer class="bg-white border-t border-gray-400 shadow">
         <div class="container max-w-5xl mx-auto flex flex-col pt-5 pb-5">
-            <div class="flex justify-around">
-                <p>
+            <div class="flex flex-col md:flex-row justify-around">
+                <p class="p-3 md:p-0">
                     <i class="fa fa-copyright" role="copyright"></i>© {{ data.copyright}} -
                     <span class="footer-bottom-rights">{{  data.rights }}</span>
                 </p>
 
-                <a href="{{  data.termsPage.path }}" class="generic-anchor" rel="nofollow">{{ data.termsPage.name }}</a>
+                <a href="{{  data.termsPage.path }}" class="generic-anchor p-3 md:p-0" rel="nofollow">{{ data.termsPage.name }}</a>
 
-                <select name="lang" id="languages-list"></select>
+                <select class="p-3 md:p-0" name="lang" id="languages-list"></select>
             </div>
         </div>
     </footer>

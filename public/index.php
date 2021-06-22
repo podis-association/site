@@ -132,7 +132,7 @@ class Kernel extends BaseKernel
 
 
 $environment = getenv('APP_ENV') ?: 'prod';
-$debug = getenv('APP_DEBUG') ?: false;
+$debug = (bool) getenv('APP_DEBUG') || false;
 
 $kernel = new Kernel($environment, $debug);
 $request = Request::createFromGlobals();
