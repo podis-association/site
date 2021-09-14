@@ -72,5 +72,10 @@ return [
                 'name' => 'Donează'
             ]
         ],
+        'projects' => [
+            'project-re-construction-of-the-church-roof' => [
+                'path' => '/ro/project-re-construction-of-the-church-roof',
+            ],
+        ]
     ]
 ];

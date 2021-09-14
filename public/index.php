@@ -44,6 +44,7 @@ class Kernel extends BaseKernel
         $routes->add('home', ['/{lang}/home', '/home', '/'])->controller([$this, 'home']);
         $routes->add('about-us', '/{lang}/about-us')->controller([$this, 'aboutUs']);
         $routes->add('projects', '/{lang}/projects')->controller([$this, 'projects']);
+        $routes->add('project-re-construction-of-the-church-roof', '/{lang}/project-re-construction-of-the-church-roof')->controller([$this, 'projectReConstructionOfTheChurchRoof']);
         $routes->add('donate', '/{lang}/donate')->controller([$this, 'donate']);
         $routes->add('terms-of-use', '/{lang}/terms-of-use')->controller([$this, 'termsOfUse']);
     }
@@ -96,6 +97,22 @@ class Kernel extends BaseKernel
         return new Response($content);
     }
 
+    public function projectReConstructionOfTheChurchRoof(string $lang = 'en'): Response
+    {
+        $parameter = $this->getContainer()->getParameter('sitemap');
+
+        $context = [
+            'menu' => $parameter[$lang]['menu'],
+            'footer' => $parameter[$lang]['footer'],
+            'callToAction' => $parameter[$lang]['callToAction'],
+        ];
+
+        $obj = $this->getContainer()->get('twig');
+        $content = $obj
+            ->render("$lang/projects/project-re-construction-of-the-church-roof.html.twig", $context);
+
+        return new Response($content);
+    }
 
     public function termsOfUse(string $lang = 'en'): Response
     {

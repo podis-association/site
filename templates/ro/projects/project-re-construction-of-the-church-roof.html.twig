@@ -1,0 +1,85 @@
+{% extends 'layout.html.twig' %}
+
+{% import "utils.html.twig" as content %}
+
+ {% block meta %}
+     <meta property="og:locale" content="ro_Ro">
+     <meta property="og:type" content="article">
+     <meta property="og:description" content="APEL CĂTRE COMUNITATEA CREȘTINĂ DE PRETUTINDENI ȘI CĂTRE OAMENII CU SUFLET MARE DIN MOLDOVA ȘI DIN AFARA ȚĂRII, ÎNTRU SUSȚINEREA FINALIZĂRII RE-CONSTRUCȚIEI ACOPERIȘULUI <strong>BISERICII ”ADORMIREA MAICII DOMNULUI” DIN COM. DUMBRĂVIȚA, R-NUL SÎNGEREI.">
+     <meta property="og:url" content="https://podis.md/ro/project-re-construction-of-the-church-roof">
+     <meta property="og:title" content="Re-construcția acoperișului Bisericii">
+     <meta property="og:image" content="https://podis.md/foto-biserica.jpg" />
+ {% endblock %}
+
+{% block container %}
+<!--Container-->
+<div class="container w-full md:max-w-5xl mx-auto pt-10 md:pt-20">
+
+    <div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
+
+        <!--Title-->
+        <div class="font-sans mb-8">
+            <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
+                Re-construcția acoperișului Bisericii
+            </h1>
+            <p class="text-sm md:text-base font-normal text-gray-600">Acasa > Proiecte Curente</p>
+        </div>
+
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ro_RO/sdk.js#xfbml=1&version=v11.0" nonce="yPTjvuHa"></script>
+
+
+{#        <p class="mb-8">#}
+{#            APEL CĂTRE COMUNITATEA CREȘTINĂ DE PRETUTINDENI ȘI CĂTRE OAMENII CU#}
+{#            SUFLET MARE DIN MOLDOVA ȘI DIN AFARA ȚĂRII, ÎNTRU SUSȚINEREA FINALIZĂRII#}
+{#            RE-CONSTRUCȚIEI ACOPERIȘULUI <strong>BISERICII ”ADORMIREA MAICII DOMNULUI” DIN#}
+{#            COM. DUMBRĂVIȚA</strong>, R-NUL SÎNGEREI.#}
+{#        </p>#}
+
+        <p class="mb-5">
+            Comunitatea Religioasă Parohia cu Hramul ”Adormirea Maicii Domnului” din
+            cadrul Bisericii Ortodoxe din com. Dumbrăvița, r-nul Sîngerei, în comun cu Primăria
+            com. Dumbrăvița și Asociația Obștească ”PODIȘ” apelează la oamenii
+        </p>
+
+        <div class="flex flex-col md:flex-row">
+
+            <div class="w-full md:w-1/2 mb-5">
+                <p class="mb-8">
+                    de bună credință și ne-indiferenți de tradiția spiritualicească creștină din țară și peste
+                    hotare pentru a contribui și susține financiar continuarea și finalizarea acoperișului
+                    și cupolelor Bisericii din localitate.
+                </p>
+
+                <p class="mb-8">
+                    Conform link-urlui de mai jos indicat aveți posibilitate să alegeți modalitatea de
+                    transfer și să donați electronic o contribuție în sprijinirea acestui obiectiv nobil
+                    reprezentat prin lăcașul sfânt al Bisericii ”Adormirea Maicii Domnului”.
+                </p>
+
+                <p class="mb-8">
+                    Va aducem înalte asigurări și asumarea transparenței pentru orice valoare donată
+                    și pentru fiecare creștin evlavios care va participa prin implicarea sa la ducerea cu
+                    bun sfârșit a eforturilor comune și comunitare de re-construire a Bisericii.
+                </p>
+
+                <p class="mb-8">
+                    Așa să ne ajute Dumnezeu!
+                    <br>
+                    <div class="fb-share-button" data-href="https://podis.md/ro/project-re-construction-of-the-church-roof" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpodis.md%2Fro%2Fproject-re-construction-of-the-church-roof&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+                </p>
+
+            </div>
+
+            <img class="w-full md:w-2/5 md:ml-8" src="/foto-biserica.jpg" alt="Biserica ”Adormirea Maicii Domnului”">
+
+        </div>
+
+
+    </div>
+    <!--/Next & Prev Links-->
+
+    {{ content.callToAction(callToAction) }}
+</div>
+<!--/container-->
+{% endblock %}
