@@ -36,6 +36,11 @@ return [
                 'name' => 'Donate'
             ]
         ],
+        'projects' => [
+            'arrangement-of-the-river-banks-of-ciulucul-mic-river' => [
+                'path' => '/en/arrangement-of-the-river-banks-of-ciulucul-mic-river',
+            ],
+        ]
     ],
     'ro' => [
         'menu' => [
@@ -75,6 +80,9 @@ return [
         'projects' => [
             'project-re-construction-of-the-church-roof' => [
                 'path' => '/ro/project-re-construction-of-the-church-roof',
+            ],
+            'arrangement-of-the-river-banks-of-ciulucul-mic-river' => [
+                'path' => '/ro/arrangement-of-the-river-banks-of-ciulucul-mic-river',
             ],
         ]
     ]

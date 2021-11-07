@@ -1,0 +1,101 @@
+{% extends 'layout.html.twig' %}
+
+{% import "utils.html.twig" as content %}
+
+ {% block meta %}
+     <meta property="og:locale" content="ro_Ro">
+     <meta property="og:type" content="article">
+     <meta property="og:description" content="APEL CĂTRE COMUNITATEA CREȘTINĂ DE PRETUTINDENI ȘI CĂTRE OAMENII CU SUFLET MARE DIN MOLDOVA ȘI DIN AFARA ȚĂRII, ÎNTRU SUSȚINEREA FINALIZĂRII RE-CONSTRUCȚIEI ACOPERIȘULUI <strong>BISERICII ”ADORMIREA MAICII DOMNULUI” DIN COM. DUMBRĂVIȚA, R-NUL SÎNGEREI.">
+     <meta property="og:url" content="https://podis.md/ro/project-re-construction-of-the-church-roof">
+     <meta property="og:title" content="Re-construcția acoperișului Bisericii">
+     <meta property="og:image" content="https://podis.md/foto-biserica.jpg" />
+ {% endblock %}
+
+{% block container %}
+<!--Container-->
+<div class="container w-full md:max-w-5xl mx-auto pt-10 md:pt-20">
+
+    <div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
+
+        <!--Title-->
+        <div class="font-sans mb-8">
+            <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
+                Amenajarea Basinului hidrografic si a malurilor riverane ale R. Ciulucul Mic din com. Dumbravita, R-NUL Singerei
+            </h1>
+            <p class="text-sm md:text-base font-normal text-gray-600">Acasa > Proiecte Curente</p>
+        </div>
+
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ro_RO/sdk.js#xfbml=1&version=v11.0" nonce="yPTjvuHa"></script>
+
+
+        <p class="mb-5">
+            Anunț de lansare a Concursului de granturi mici pentru ONG-urile naționale și
+            regionale în zonele sub-bazinelor Bîc, Răut, Larga, Tigheci, Ialpug, Naslavcea-
+            Vasilcău
+        </p>
+
+        <p class="mb-5">
+            Asociația Obștească (AO) Centrul Naţional de Mediu, cu susținerea financiară a
+            Guvernului Suediei, lansează propunerea de oferte pentru ONG-uri în cadrul
+            Programului de Granturi Mici (PGM) „Mediu, adaptare la schimbările climatice şi
+            ecosisteme”.
+        </p>
+
+        <p class="mb-5">
+            Vezi detalii si informatii relevante pentru participare accesand link-ul
+            <br>
+            <a class="text-base text-blue-500 text-xl" href="https://www.environment.md/ro/noutati/anunt_de_lansare_a_concursului_de_granturi_mici_pentru_ong-urile_nationale_si_regionale_in_zonele_sub-bazinelor_bic_raut_larga_tigheci_ialpug_naslavcea-vasilcau" target="_blank">
+                detalii ..
+            </a>
+        </p>
+
+        <p class="mb-5">
+            Asociatia Obsteasca ASOCIATIA FERMIERILOR SI INTREPRINZATORILOR
+            REGIONALI ”PODIȘ” în parteneriat cu Primăria com. Dumbrăvița, au depus efort
+            comun pentru a rezolva o problemă majoră din comună și anume în domeniul
+            mediului și a ecologității, urmărind scopul nobil de a contribui la mobilizarea
+            comunitară prin intermediul parteneriatului public și asociativ în vederea facilitării
+            amenajării malurilor riverane ale r. Ciulucul Mic și a promovării educației civico -
+            ecologice de îmbunătățire și mentenanță a eco-sistemului aferent.
+        </p>
+
+        <p class="mb-8">
+            Proiectul este planificat pentru a fi implementat în perioada 01.02.2021 - 31.05.2021
+            cu un Buget estimativ de cca 150 mii lei MDL.
+        </p>
+
+        <h3 class="font-bold mb-8">DATE DESPRE PROIECT:</h3>
+
+        <h4 class="font-bold mb-8">Obiectiv general:</h4>
+        <p class="mb-8">
+            Mobilizarea comunitară și consolidarea spiritului civic și ecologic pentru
+            îmbunătățirea perimetrului bazinului hidrografic al r. Ciulucul Mic ce traversează
+            com. Dumbrăvița prin facilitarea amenajării malurilor și plantarea arborilor
+            riverani, inclusiv prin promovarea depinderilor și conștiinței de menținere al eco-
+            sistemului facilitat pe comunitate.
+        </p>
+        <h4 class="font-bold mb-8">Obiective specifice:</h4>
+
+        <ul class="list-disc ml-10 mb-8">
+            <li>De a facilita curățarea și amenajarea malurilor r. Ciulucul Mic pe o suprafață
+                de cca 5 ha (pe o lungime de peste 4 km) și consolidarea lor prin plantarea arborilor
+                riverani cu suportul comunității mobilizate din s. Dumbrăvița, s. Vadul lui Vlad și s.
+                Bocancea - Schit, r-nul Sîngerei</li>
+            <li>
+                De a dezvolta și promova educația și spiritul de păstrare și extindere a
+                ecologității comunitare prin acțiuni de informare, dezbateri și advocacy inclusiv prin
+                lansarea reprezentativă a Gărzii Ecologice din Dumbrăvița
+            </li>
+        </ul>
+
+        <div class="fb-share-button" data-href="https://podis.md/ro/project-re-construction-of-the-church-roof" data-layout="button" data-size="large">
+            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpodis.md%2Fro%2Fproject-re-construction-of-the-church-roof&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+    </div>
+    <!--/Next & Prev Links-->
+
+    {{ content.callToAction(callToAction) }}
+</div>
+<!--/container-->
+{% endblock %}
