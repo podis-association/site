@@ -1,0 +1,71 @@
+{% extends 'layout.html.twig' %}
+
+{% import "utils.html.twig" as content %}
+
+ {% block meta %}
+     <meta property="og:locale" content="ro_Ro">
+     <meta property="og:type" content="article">
+     <meta property="og:description" content="În cadrul campaniei naționale de împădurire a plaiului „Plantează-ți
+                viitorul”, AO Centrul Național de Mediu în colaborare cu Primăria din satul
+                Dumbrăvița, raionul Sângerei și AO Podiș organizează plantarea fâșiei de
+                protecție a malurilor afluentului râului Ciuluc.În acest context, vă invităm să luați parte la această activitate,
+                vineri 3 decembrie 2021, începând cu orele 11.00</strong> în satul Dumbrăvița,
+                raionul Sângerei.">
+     <meta property="og:url" content="https://podis.md/ro/plant-your-future">
+     <meta property="og:title" content="Plantează-ți viitorul">
+     <meta property="og:image" content="https://podis.md/plant-your-future_34567.jpg" >
+ {% endblock %}
+
+{% block container %}
+    <!--Container-->
+    <div class="container w-full md:max-w-5xl mx-auto pt-10 md:pt-20">
+
+        <div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
+
+            <!--Title-->
+            <div class="font-sans mb-8">
+                <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
+                    Plantează-ți viitorul
+                </h1>
+                <p class="text-sm md:text-base font-normal text-gray-600">Acasa > Proiecte Curente</p>
+            </div>
+
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ro_RO/sdk.js#xfbml=1&version=v11.0" nonce="yPTjvuHa"></script>
+
+            <p class="mb-5">
+                În cadrul  campaniei naționale de împădurire a plaiului „Plantează-ți
+                viitorul”, AO Centrul Național de Mediu în colaborare cu Primăria din satul
+                Dumbrăvița, raionul Sângerei și AO Podiș organizează plantarea fâșiei de
+                protecție a malurilor afluentului râului Ciuluc.
+            </p>
+
+            <img class="w-full md:w-2/5 float-left mb-5 mr-3 " src="/plant-your-future_34567.jpg" alt="Plantează-ți viitorul">
+            <p class="mb-10 text-center">
+                În acest context, vă invităm să luați parte la această activitate,
+                <br>
+                <strong>vineri 3 decembrie 2021, începând cu orele 11.00</strong> în satul Dumbrăvița,
+                raionul Sângerei.
+            </p>
+            <p class="mb-16 text-center">
+                Centrul Național de Mediu activează cu susținerea Suediei și acest
+                eveniment face parte dintr-o serie de activități dedicate protecției și
+                reabilitării resurselor de apa din țară, prioritate fiind râurile mici.
+            </p>
+            <p class="mb-10 text-center">
+                Persoana de contact în această activitate este Velicinschi Adriana,
+                <br>
+                telefon 069888133, e-mail:  cnm@environment.md .
+            </p>
+           <p class="mb-16 text-center">
+                Vă mulțumim anticipat pentru deschidere și cooperare.
+            </p>
+
+
+        </div>
+        <!--/Next & Prev Links-->
+
+        {{ content.callToAction(callToAction) }}
+    </div>
+    <!--/container-->
+{% endblock %}

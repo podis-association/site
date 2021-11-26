@@ -1,0 +1,74 @@
+{% extends 'layout.html.twig' %}
+
+{% import "utils.html.twig" as content %}
+
+ {% block meta %}
+     <meta property="og:locale" content="ro_Ro">
+     <meta property="og:type" content="article">
+     <meta property="og:description" content="Within the national afforestation campaign of the “Plant your future”
+                area, National Environmental Center NGO in collaboration with the
+                Mayoralty of Dumbrăvița, Sangerei district and PODIS NGO organizes the
+                planting of the protection strip of the banks of the Ciuluc river tributary.
+                In this context, we invite you to take part in this activity,
+                on Friday, December 3, 2021, starting with 11.00 in Dumbrăvița village,
+                Sângerei district.">
+     <meta property="og:url" content="https://podis.md/en/plant-your-future">
+     <meta property="og:title" content="Plant your future">
+     <meta property="og:image" content="https://podis.md/plant-your-future_34567.jpg" >
+ {% endblock %}
+
+{% block container %}
+    <!--Container-->
+    <div class="container w-full md:max-w-5xl mx-auto pt-10 md:pt-20">
+
+        <div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
+
+            <!--Title-->
+            <div class="font-sans mb-8">
+                <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
+                    Plantează-ți viitorul
+                </h1>
+                <p class="text-sm md:text-base font-normal text-gray-600">Acasa > Proiecte Curente</p>
+            </div>
+
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ro_RO/sdk.js#xfbml=1&version=v11.0" nonce="yPTjvuHa"></script>
+
+            <p class="mb-5">
+                Within the national afforestation campaign of the “Plant your future”
+                area, National Environmental Center NGO in collaboration with the
+                Mayoralty of Dumbrăvița, Sangerei district and PODIS NGO organizes the
+                planting of the protection strip of the banks of the Ciuluc river tributary.
+            </p>
+
+            <img class="w-full md:w-2/5 float-left mb-5 mr-3 " src="/plant-your-future_34567.jpg" alt="Plantează-ți viitorul">
+            <p class="mb-10 text-center">
+                In this context, we invite you to take part in this activity,
+                <br>
+                <strong>on Friday, December 3, 2021, starting with 11.00 in Dumbrăvița village</strong>,
+                <br>
+                Sângerei district.
+            </p>
+            <p class="mb-16 text-center">
+                The National Environmental Center works with the support of
+                Sweden Fund and this event is part of a series of activities dedicated to the
+                protection and rehabilitation of water resources in the country, with priority
+                given to small rivers.
+            </p>
+            <p class="mb-10 text-center">
+                The contact person in this activity is Velicinschi Adriana, phone
+                <br>
+                069888133, e-mail: cnm@environment.md
+            </p>
+            <p class="mb-16 text-center">
+                Thank you in advance for your openness and cooperation.
+            </p>
+
+
+        </div>
+        <!--/Next & Prev Links-->
+
+        {{ content.callToAction(callToAction) }}
+    </div>
+    <!--/container-->
+{% endblock %}

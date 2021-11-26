@@ -46,6 +46,7 @@ class Kernel extends BaseKernel
         $routes->add('projects', '/{lang}/projects')->controller([$this, 'projects']);
         $routes->add('project-re-construction-of-the-church-roof', '/{lang}/project-re-construction-of-the-church-roof')->controller([$this, 'projectReConstructionOfTheChurchRoof']);
         $routes->add('arrangement-of-the-river-banks-of-ciulucul-mic-river', '/{lang}/arrangement-of-the-river-banks-of-ciulucul-mic-river')->controller([$this, 'arrangementOfTheRiverBanksOfCiuluculMicRiver']);
+        $routes->add('plant-your-future', '/{lang}/plant-your-future')->controller([$this, 'plantYourFuture']);
         $routes->add('donate', '/{lang}/donate')->controller([$this, 'donate']);
         $routes->add('terms-of-use', '/{lang}/terms-of-use')->controller([$this, 'termsOfUse']);
     }
@@ -161,6 +162,23 @@ class Kernel extends BaseKernel
             ->render("$lang/projects/arrangement-of-the-river-banks-of-ciulucul-mic-river.html.twig", $context);
 
         return new Response($content);
+    }
+
+    public function plantYourFuture(string $lang = 'en'): Response {
+        $parameter = $this->getContainer()->getParameter('sitemap');
+
+        $context = [
+            'menu' => $parameter[$lang]['menu'],
+            'footer' => $parameter[$lang]['footer'],
+            'callToAction' => $parameter[$lang]['callToAction'],
+        ];
+
+        $obj = $this->getContainer()->get('twig');
+        $content = $obj
+            ->render("$lang/projects/plant-your-future.html.twig", $context);
+
+        return new Response($content);
+
     }
 }
 
